@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body bgcolor="yellow">
+	
+	<script type="application/javascript">
+		
+		function calc()
+		{
+			if(confirm("do u want to calculate???"))
+			{
+			  var e=f1.txteq.value;
+			f1.txtans.value=eval(e);
+				
+							
+			alert(e);
+			}
+			else
+				{
+					f1.txtans.value="bye....";
+					
+				}
+			
+
+			
+		}
+	
+	</script>
+	
+	<form name="f1">
+	
+	<input type="text" name="txteq"  placeholder="enter eq" onBlur="calc()" >
+	<input type="text" name="txtans" placeholder="answer" >
+	
+	</form>
+	
+</body>
+</html>
